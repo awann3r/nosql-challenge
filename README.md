@@ -38,20 +38,17 @@ establishments.update_many({}, [{'$set': {'geocode.longitude': {'$toDecimal': '$
 
 ### Part 3: Exploratory Analysis
 1. Which establishments have a hygiene score equal to 20?
-
 There are 41 establishments with a hygiene score of 20.
 
 2. Which establishments in London have a RatingValue greater than or equal to 4?
-
 There are 33 establishments with London as the Local Authority and has a RatingValue greater than or equal to 4.
 
 3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
-
- "Volunteer", "Plumstead Manor Nursery", "Atlantic Fish Bar", "Iceland", and "Howe and Co Fish and Chips - Van 17" 
+"Volunteer", "Plumstead Manor Nursery", "Atlantic Fish Bar", "Iceland", and "Howe and Co Fish and Chips - Van 17" 
 
 4. How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest?
-
 Number of documents in results: 55. This is a preview of the first 10 rows:
+  
     | _id | count |
     |-----|-------|
     |Thanet|1130|
